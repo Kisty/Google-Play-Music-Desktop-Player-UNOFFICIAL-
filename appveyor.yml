@@ -40,7 +40,7 @@ install:
   - appveyor DownloadFile https://www.samuelattard.com/files/bonjoursdksetup.exe
   - bonjoursdksetup.exe /quiet
   - del bonjoursdksetup.exe
-  - npm cache clean
+  - npm cache clean --force
   - npm install
 
 test_script:
